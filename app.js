@@ -12,7 +12,7 @@ document.getElementById('updateTable').addEventListener('click', (e) => {
       console.log(players);
       let output;
       let count = 1;
-      players.forEach((player) =>{
+      players.forEach((player) => {
         output = ` <td>${count}</td>
                    <td>${player.name}</td>
                    <td>${player.wins}</td>
