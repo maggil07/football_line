@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Friendship Football-Line</title>
 </head>
 <body>
@@ -17,12 +18,21 @@
   <main class="container">
     <div class="jumbotron">
       <h1>SCOREBOARD</h1>
-      <table class="table table-hover">
+      <table class="table table-hover" style="width: 100%;">
+        <colgroup>
+          <!-- Works out to a liitle less then 4.75% less for 24 columns 17 weeks 4 playoffs place, name and total -->
+          <!-- <col span="1" style="width: 4.75%; text-align: right;">
+          <col span="1" style="width: 4.75%; text-align: right;">
+          <col span="1" style="width: 5%; text-align: right;">
+          <col span="1" style="width: 85.75%; text-align: right;">
+          <col span="1" style="width: 4.75%; text-align: right;"> -->
+        </colgroup>
         <thead>
-          <th scope="col">Place</th>
+          <th scope="col" id="th_test">Place</th>
           <th scope="col">Name</th>
-          <th scope="col">Wins</th>
-          <th scope="col">Points</th>
+          <th scope="col">Week 1</th>
+          <th scope="col">Week 2</th>
+          <th scope="col">Total Points</th>
         </thead>
         <tbody>
           <tr id=1>
@@ -55,16 +65,16 @@
           </tr>
           <tr id=6>
             <th scope="row">6</th>
-            <td>
+            <td style="text-align: center;">
 
             </td>
           </tr>
-          <tr id=7>
+          <!-- <tr id=7>
             <th scope="row">7</th>
             <td>
 
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
       <button id="updateTable" class="btn btn-primary btn-lg btn-block">Submit</button>

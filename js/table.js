@@ -1,57 +1,58 @@
-var req = new XMLHttpRequest();
-console.log("made it into table.js");
-var url = '/scores';
-req.open('GET', url, true);
-req.addEventListener('load', onLoad);
-req.addEventListener('error', onError);
-
-req.send();
-
-function onLoad() {
-  console.log("made it into onLoad function");
-  const players; = JSON.parse(this.responseText);
-  console.log(players);
-  let output;
-  let count = 1;
-  players.forEach((item) => {
-    console.log("made it into players.forEach");
-    output = `<td>${count}</td>
-              <td>${item.name}</td>
-              <td>${item.wins}</td>
-              <td>${item.totalPoints}</td>`
-    document.getElementById(count).innerHTML = output;
-    count++;
-  })
-}
-
-
-
-// document.getElementById('updateTable').addEventListener('click', (e) => {
-//   const xhr = new XMLHttpRequest();
+// var req = new XMLHttpRequest();
+// console.log("made it into table.js");
+// var url = '/scores';
+// req.open('GET', url, true);
+// req.addEventListener('load', onLoad);
+// req.addEventListener('error', onError);
 //
-//   xhr.open('GET', '../players.json', true);
-//   xhr.onload = function () {
-//     if (this.status === 200) {
+// req.send();
 //
-//       const players = JSON.parse(this.responseText);
-//       console.log(players);
-//       players.sort((a, b) => b.totalPoints - a.totalPoints);
-//
-//       console.log(players);
-//       let output;
-//       let count = 1;
-//       players.forEach((player) => {
-//         output = ` <td>${count}</td>
-//                    <td>${player.name}</td>
-//                    <td>${player.wins}</td>
-//                    <td>${player.totalPoints}</td>`
-//         document.getElementById(count).innerHTML = output;
-//         count++;
-//       })
-//     }
-//   }
-//   xhr.send();
-// });
+// function onLoad() {
+//   console.log("made it into onLoad function");
+//   const players; = JSON.parse(this.responseText);
+//   console.log(players);
+//   let output;
+//   let count = 1;
+//   players.forEach((item) => {
+//     console.log("made it into players.forEach");
+//     output = `<td>${count}</td>
+//               <td>${item.name}</td>
+//               <td>${item.wins}</td>
+//               <td>${item.totalPoints}</td>`
+//     document.getElementById(count).innerHTML = output;
+//     count++;
+//   })
+// }
+
+
+
+document.getElementById('updateTable').addEventListener('click', (e) => {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open('GET', '../players.json', true);
+  xhr.onload = function () {
+    if (this.status === 200) {
+
+      const players = JSON.parse(this.responseText);
+      console.log(players);
+      players.sort((a, b) => b.totalPoints - a.totalPoints);
+
+      console.log(players);
+      let output;
+      let count = 1;
+      players.forEach((player) => {
+        output = ` <td>${count}</td>
+                   <td>${player.name}</td>
+                   <td>${player.week1}</td>
+                   <td>${player.week2}</td>
+                   <td>${player.totalPoints}</td>`
+        document.getElementById(count).innerHTML = output;
+        count++;
+      })
+    }
+  }
+  xhr.send();
+});
 //
 //
 // class Player {
