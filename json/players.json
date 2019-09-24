@@ -5,7 +5,8 @@
     "weekPoints": 0,
     "week1": 4,
     "week2": 1,
-    "totalPoints": 5
+    "week3": 2,
+    "totalPoints": 7
   },
   {
     "id": 2,
@@ -13,6 +14,7 @@
     "weekPoints": 2,
     "week1": 4,
     "week2": 3,
+    "week3": 0,
     "totalPoints": 7
   },
   {
@@ -21,7 +23,8 @@
     "weekPoints": 1,
     "week1": 3,
     "week2": 3,
-    "totalPoints": 6
+    "week3": 3,
+    "totalPoints": 9
   },
   {
     "id": 5,
@@ -29,7 +32,8 @@
     "weekPoints": 2,
     "week1": 3,
     "week2": 1,
-    "totalPoints": 4
+    "week3": 4,
+    "totalPoints": 8
   },
   {
     "id": 6,
@@ -37,6 +41,7 @@
     "weekPoints": 0,
     "week1": 3,
     "week2": 2,
+    "week3": 0,
     "totalPoints": 5
   },
   {
@@ -45,6 +50,7 @@
     "weekPoints": 2,
     "week1": 2,
     "week2": 1,
-    "totalPoints": 3
+    "week3": 3,
+    "totalPoints": 6
   }
 ]

@@ -45,6 +45,7 @@ document.getElementById('updateTable').addEventListener('click', (e) => {
                    <td>${player.name}</td>
                    <td>${player.week1}</td>
                    <td>${player.week2}</td>
+                   <td>${player.week3}</td>
                    <td>${player.totalPoints}</td>`
         document.getElementById(count).innerHTML = output;
         count++;
