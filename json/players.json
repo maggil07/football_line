@@ -9,7 +9,11 @@
     "week4": 0,
     "week5": 0,
     "week6": 2,
-    "totalPoints": 9
+    "week7": 3,
+    "week8": 2,
+    "week9": 1,
+    "week10": 1,
+    "totalPoints": 16
   },
   {
     "id": 2,
@@ -21,7 +25,11 @@
     "week4": 3,
     "week5": 1,
     "week6": 1,
-    "totalPoints": 12
+    "week7": 2,
+    "week8": 3,
+    "week9": 1,
+    "week10": 1,
+    "totalPoints": 19
   },
   {
     "id": 3,
@@ -33,7 +41,11 @@
     "week4": 2,
     "week5": 3,
     "week6": 0,
-    "totalPoints": 14
+    "week7": 2,
+    "week8": 3,
+    "week9": 2,
+    "week10": 2,
+    "totalPoints": 23
   },
   {
     "id": 5,
@@ -45,7 +57,11 @@
     "week4": 2,
     "week5": 2,
     "week6": 1,
-    "totalPoints": 13
+    "week7": 4,
+    "week8": 4,
+    "week9": 1,
+    "week10": 1,
+    "totalPoints": 23
   },
   {
     "id": 6,
@@ -57,7 +73,11 @@
     "week4": 3,
     "week5": 2,
     "week6": 1,
-    "totalPoints": 11
+    "week7": 3,
+    "week8": 1,
+    "week9": 3,
+    "week10": 1,
+    "totalPoints": 19
   },
   {
     "id": 7,
@@ -69,6 +89,10 @@
     "week4": 3,
     "week5": 3,
     "week6": 2,
-    "totalPoints": 14
+    "week7": 2,
+    "week8": 4,
+    "week9": 3,
+    "week10": 2,
+    "totalPoints": 25
   }
 ]
